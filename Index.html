@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unrafita Sandbox</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+  </style>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="experience">
+    <canvas id="experience-canvas"></canvas>
+  </div>
+
+  <div class="modal hidden">
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        <h1 class="modal-title">Unrafita Sandbox</h1>
+        <button class="modal-exit-button">Salir</button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-content-wrapper">
+          <a class="modal-visit-button"></a>
+          <div class="modal-project-description"> ... y llegamos al final del año y al final de Animación 3D. Tomemos un tiempo
+            para observar hasta donde llegamos y lo que hemos logrado... Y sigamos adelante!
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.181.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.1/examples/jsm/"
+        }
+      }
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
